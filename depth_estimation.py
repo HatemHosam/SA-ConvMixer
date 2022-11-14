@@ -1,6 +1,4 @@
 from tensorflow.keras import layers
-from tensorflow import keras
-import matplotlib
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import numpy as np
