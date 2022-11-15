@@ -14,13 +14,11 @@ elif dataset == 'NYUV2':
     model = get_SA_ConvMixer(
                 image_size_h=480, image_size_w=640, filters=256, depth=12, kernel_size=5, patch_size=5, dataset = 'NYUV2')
     model.load_weights('NYU-depthV2.h5')
-    cmap = VOC_clr
 
 elif dataset == 'Cityscapes-depth':
     model = get_SA_ConvMixer(
                 image_size_h=512, image_size_w=1024, filters=256, depth=12, kernel_size=5, patch_size=8, dataset = 'Cityscapes-depth')
     model.load_weights('Cityscapes-depth.h5')
-    cmap = Cityscapes_clr
     
 img = cv2.imread('img.jpg')
 img = cv2.resize(img, (1024,512))
