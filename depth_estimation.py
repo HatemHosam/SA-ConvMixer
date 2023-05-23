@@ -6,9 +6,7 @@ import os
 import cv2
 from convMixer import get_SA_Convmixer
 
-
 dataset = 'NYUV2'     # can choose also'Cityscapes-depth'
-
 
 elif dataset == 'NYUV2':
     model = get_SA_ConvMixer(
