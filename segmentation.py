@@ -9,7 +9,6 @@ import cv2
 from colormaps import VOC_cm, ADE_cm, Cityscapes_cm
 from convMixer import get_SA_Convmixer_ADE, get_SA_Convmixer
 
-
 dataset = 'VOC'     # can choose also 'ADE20K' or 'Cityscapes-Seg'
 
 if dataset == 'ADE20K':
