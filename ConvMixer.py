@@ -86,23 +86,3 @@ def get_SA_Convmixer(
         outputs = tf.keras.activations.softmax(outputs)
 
     return keras.Model(inputs, outputs)
-    
-def get_Convmixer_SR(
-    image_size_h=120, image_size_w=120, filters=256, depth=12, kernel_size=5, patch_size=1, num_channel=3, upscale= 4):
-
-    inputs = keras.Input((image_size_h, image_size_w, 3))
-    x = tf.keras.layers.Rescaling(scale=1./255 )(inputs)
-    # no patch embeddings.
-    x = layers.Conv2D(filters, kernel_size=1, strides=1)(x)
-    x = activation_block(x)
-
-    # ConvMixer blocks.
-    for _ in range(depth):
-        x = conv_mixer_block(x, filters, kernel_size)
-
-    # Classification block.
-    x = layers.Conv2D(num_channel * (patch_size**2)* (upscale**2), kernel_size=1)(x)
-    x = activation_block(x)
-    outputs = tf.nn.depth_to_space(x, patch_size * upscale)
-
-    return keras.Model(inputs, outputs)
