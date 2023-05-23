@@ -15,8 +15,12 @@ matplotlib = '3.5.2'
 pytorch = '1.13.0'
 
 
-Note that only CIFAR10 classification code is implemented using Pytorch by modifying original Conv-mixer code in here:
+Note that CIFAR10 classification code is implemented using Pytorch by modifying original Conv-mixer code in here:
 
 https://github.com/locuslab/convmixer-cifar10
 
-All other codes are implemented using tensorflow 
+The ImageNet-1k experiment is implemented in pyTorch using timm's framework, we modify the code from the original ConvMixer available at:
+
+https://github.com/locuslab/convmixer
+
+All other codes are originally implemented using tensorflow.
