@@ -19,8 +19,8 @@ Note that CIFAR10 classification code is implemented using Pytorch by modifying 
 
 https://github.com/locuslab/convmixer-cifar10
 
-The ImageNet-1k experiment is implemented in pyTorch using timm's framework, we modify the code from the original ConvMixer available at:
+The ImageNet-1k experiment is implemented in PyTorch using timm's framework, we modify the code from the original ConvMixer available at:
 
 https://github.com/locuslab/convmixer
 
-All other codes are originally implemented using tensorflow.
+All other codes are originally implemented using Tensorflow.
