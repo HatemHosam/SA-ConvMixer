@@ -1,4 +1,4 @@
-# SA-ConvMixer
+# SA-ConvMixer: Pixel Shuffling is all you Need: Spatially Aware ConvMixer for Dense Prediction Tasks
 
 This is the test code of SA-ConvMixer paper: Pixel Shuffling is all you Need: Spatially Aware ConvMixer for Dense Prediction Tasks
 
