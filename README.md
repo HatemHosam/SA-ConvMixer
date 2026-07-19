@@ -2,6 +2,8 @@
 
 This is the test code of SA-ConvMixer paper: Pixel Shuffling is all you Need: Spatially Aware ConvMixer for Dense Prediction Tasks. [paper](https://www.sciencedirect.com/science/article/pii/S0031320324008197)
 
+![fig](fig.png)
+
 Requirements:
 
 Tensorflow = '2.10.0'
